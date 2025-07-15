@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Appium Test Suite" parallel="false">
+    <parameter name="deviceSetup" value="android-emulator.yaml"/>
+    <parameter name="platform" value="ANDROID"/>
+    <test name="Appium Tests">
+        <classes>
+            <!-- List your test classes here -->
+            <class name="com.appiumProject.tests.FirstTest"/>
+            <!-- Add more <class> entries as needed -->
+        </classes>
+    </test>
+</suite>

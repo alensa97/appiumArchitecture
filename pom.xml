@@ -1,0 +1,79 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.appiumProject</groupId>
+  <artifactId>appiumScratchSolution</artifactId>
+  <packaging>jar</packaging>  
+  <version>1.0-SNAPSHOT</version>
+
+  <name>appiumScratchSolution</name>
+  <url>http://maven.apache.org</url>
+
+
+<properties>
+    <maven.compiler.release>17</maven.compiler.release>
+</properties>
+
+
+  <dependencies>
+  <!-- Appium -->
+    <dependency>
+      <groupId>io.appium</groupId>
+      <artifactId>java-client</artifactId>
+      <version>9.5.0</version>
+    </dependency>
+
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.34.0</version>
+    </dependency>
+  
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.11.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Jackson (JSON) -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.19.1</version>
+    </dependency>
+
+    <!-- Jackson YAML -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-yaml</artifactId>
+      <version>2.19.1</version>
+    </dependency>
+
+    <!-- Apache Commons Lang -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.14.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+      <plugins>
+            <!-- Surefire for CLI + CI runs -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>/Users/dzaferspahic.a/Documents/Sources/appiumScratchProject/runner/testing.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

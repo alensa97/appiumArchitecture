@@ -1,0 +1,11 @@
+platformName: Android
+app: /Users/dzaferspahic.a/Desktop/Rolla/APK/app-ross-profile.apk
+deviceName: emulator-5554
+automationName: UiAutomator2
+udid: emulator-5554
+disableIdLocatorAutocompletion: true
+hideKeyboard: true
+uiautomator2ServerInstallTimeout: 40000
+setNewCommandTimeout: 40000
+autoGrantPermissions: true
+port: 4723
