@@ -1,5 +1,5 @@
 platformName: Android
-app: /Users/dzaferspahic.a/Desktop/Rolla/APK/app-ross-profile.apk
+app: {appPath}
 deviceName: emulator-5554
 automationName: UiAutomator2
 udid: emulator-5554
