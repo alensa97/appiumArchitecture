@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.appiumProject.utils.Util;
+
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
@@ -52,8 +54,7 @@ public class AppiumServerManager {
       logDir.mkdirs();
     }
 
-    // String timestamp = Util.getCurrentTimestamp();
-    String logFileName = logDir + "/" + "Appium." +  ".PORT=" + port + ".txt";
+    String logFileName = logDir + "/" + "Appium." +  ".PORT=" + port + "-" + Util.getCurrentTimeStamp() + ".txt";    
     AppiumDriverLocalService service = createInstance(logFileName, port);
     service.start();
     services.put(port, service);
