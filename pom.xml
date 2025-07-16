@@ -70,7 +70,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>/Users/dzaferspahic.a/Documents/Sources/appiumScratchProject/runner/testing.xml</suiteXmlFile>
+                        <suiteXmlFile>runner/testing.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
